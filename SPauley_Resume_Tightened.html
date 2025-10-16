@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Shaina Pauley · Resume</title>
+<style>
+  :root{
+    --bg:#ffffff;
+    --text:#111318;
+    --muted:#606874;
+    --muted-2:#353b45;
+    --divider:#e7eaef;
+    --chip-bg:#f6f7fa;
+    --chip-border:#e3e6ed;
+    --accent:#7A5FFF;
+    --result:#1a7f37;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--text);
+    font:15.75px/1.48 Inter,system-ui,-apple-system,"Segoe UI",Roboto,Ubuntu,"Helvetica Neue",Arial,"Noto Sans",sans-serif}
+  .page{max-width:1100px;margin:0 auto;padding:36px 28px 44px}
+  .topbar{display:flex;justify-content:flex-end;gap:12px;color:var(--muted);font-size:14px;margin-bottom:6px;flex-wrap:wrap}
+  .topbar a{color:var(--muted);text-decoration:none}
+  .topbar a:hover{text-decoration:underline}
+  .dot::before{content:"•";margin:0 8px;color:var(--muted)}
+
+  header{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:8px}
+  .titleblock{max-width:520px}
+  h1{font-size:28px;line-height:1.1;margin:0 0 3px 0}
+  .subtitle{font-weight:700;color:var(--accent);margin:2px 0 8px 0}
+  .summary{color:var(--muted-2);margin:0}
+
+  .grid{display:grid;grid-template-columns:330px 1fr;gap:38px;margin-top:10px}
+  @media (max-width:950px){ .grid{grid-template-columns:1fr;gap:24px} }
+
+  h2{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#2b313a;margin:0 0 8px 0}
+  .section{padding-top:12px;border-top:1px solid var(--divider);margin-top:14px}
+  .section:first-child{border-top:0;padding-top:0;margin-top:0}
+
+  .chips{display:flex;flex-wrap:wrap;gap:7px}
+  .chip{border:1px solid var(--chip-border);background:var(--chip-bg);border-radius:999px;padding:5px 11px;font-size:13.1px;color:#2b313a}
+
+  .projects{display:grid;gap:9px}
+  .proj{border:1px solid var(--divider);border-radius:10px;padding:9px 11px;background:#fff}
+  .proj a{color:inherit;text-decoration:underline;text-underline-offset:2px}
+
+  .role{display:grid;grid-template-columns:1fr auto;gap:5px 16px;padding:11px 0;border-top:1px dashed var(--divider)}
+  .role:first-child{border-top:0;padding-top:0}
+  .title{margin:0 0 2px 0;font-size:16px;font-weight:700}
+  .where{color:var(--muted);font-weight:600}
+  .loc{color:var(--muted)}
+  .when{color:#8a93a3;font-size:12.5px;line-height:1.05;font-weight:500;white-space:nowrap}
+  ul{margin:7px 0 0 18px}
+  li{margin:3.8px 0}
+  em{font-style:normal;color:var(--result);font-weight:650}
+</style>
+</head>
+<body>
+  <div class="page">
+    <div class="topbar">
+      <a href="mailto:shainaep@gmail.com">shainaep@gmail.com</a><span class="dot"></span>
+      <a href="tel:7276888453">727-688-8453</a><span class="dot"></span>
+      <a href="https://www.shainapauley.com/">Portfolio</a><span class="dot"></span>
+      <a href="https://www.linkedin.com/in/shainapauley/">LinkedIn</a><span class="dot"></span>
+      <a href="https://github.com/Surfrrosa">GitHub</a><span class="dot"></span>
+      <span>St. Petersburg, FL</span>
+    </div>
+
+    <header>
+      <div class="titleblock">
+        <h1>Shaina Pauley</h1>
+        <div class="subtitle">Product Owner · AI-savvy Product Builder</div>
+        <p class="summary">I simplify complexity, own the backlog, and ship outcomes that matter.</p>
+      </div>
+    </header>
+
+    <div class="grid">
+      <aside>
+        <section class="section">
+          <h2>Core Strengths</h2>
+          <div class="chips">
+            <span class="chip">Backlog ownership</span>
+            <span class="chip">Roadmaps &amp; OKRs</span>
+            <span class="chip">AI &amp; automation</span>
+            <span class="chip">API products</span>
+            <span class="chip">Discovery → Delivery</span>
+            <span class="chip">Data-driven decisions</span>
+            <span class="chip">Cross-functional leadership</span>
+            <span class="chip">Stakeholder mgmt</span>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Methods &amp; Frameworks</h2>
+          <div class="chips">
+            <span class="chip">Scrum</span><span class="chip">Kanban</span><span class="chip">SAFe PI Planning</span>
+            <span class="chip">Lean</span><span class="chip">JTBD</span><span class="chip">User stories &amp; AC</span>
+            <span class="chip">PRDs</span><span class="chip">A/B testing</span><span class="chip">Experimentation</span>
+            <span class="chip">KPIs</span><span class="chip">OKRs</span><span class="chip">Problem framing</span>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Tools &amp; Tech</h2>
+          <div class="chips">
+            <span class="chip">Jira</span><span class="chip">Confluence</span><span class="chip">Figma</span>
+            <span class="chip">PostgreSQL</span><span class="chip">REST APIs</span><span class="chip">GraphQL*</span>
+            <span class="chip">AWS</span><span class="chip">Sentry</span><span class="chip">Stripe</span>
+            <span class="chip">QuickBooks Online</span><span class="chip">Vercel</span><span class="chip">Prisma</span>
+            <span class="chip">Python</span><span class="chip">TypeScript</span><span class="chip">GitHub Actions</span>
+          </div>
+          <p style="color:var(--muted);font-size:13px;margin-top:5px;">*working familiarity</p>
+        </section>
+
+        <section class="section">
+          <h2>Selected Projects</h2>
+          <div class="projects">
+            <div class="proj"><strong>Floatless</strong> · Shadow COO for agencies; polite dunning via Stripe, QBO sync, ROI dashboards (<a href="https://www.floatless.app/">floatless.app</a>)</div>
+            <div class="proj"><strong>Enlighten</strong> · Micro-practice app blending neuroscience + mindfulness</div>
+            <div class="proj"><strong>Portfolio Hub</strong> · Experiments &amp; writings: <a href="https://www.shainapauley.com/">shainapauley.com</a></div>
+          </div>
+        </section>
+
+        <section class="section">
+          <h2>Education &amp; Certifications</h2>
+          <ul>
+            <li><strong>B.A., Psychology (Neuroscience)</strong> · University of South Florida</li>
+            <li><strong>MSc Biomedical Neuroscience</strong> · University of Florida (admitted; start Fall 2026)</li>
+            <li>CSPO, CSM · Meta Data Analyst · Duke Medical Neuroscience · Creative Leadership (USF)</li>
+          </ul>
+        </section>
+      </aside>
+
+      <main>
+        <section class="section">
+          <h2>Profile</h2>
+          <p>Product Owner with 8+ years shipping SaaS outcomes across security, APIs, and modernizations. I turn ambiguity into a prioritized backlog, partner tightly with engineering &amp; design, and measure impact with clear KPIs.</p>
+        </section>
+
+        <section class="section">
+          <h2>Experience</h2>
+
+          <div class="role">
+            <div>
+              <p class="title">Freelance Product Owner &amp; Builder · Self-Employed</p>
+              <div class="where"><span class="loc">Remote</span><span class="dot"></span>Clients in SaaS &amp; startups</div>
+              <ul>
+                <li>Created PRDs and MVP roadmaps that clarified scope for founders and accelerated delivery.</li>
+                <li>Built AI-powered workflow tools that auto-generate user stories &amp; acceptance criteria, saving hours each sprint.</li>
+                <li>Designed Notion dashboards &amp; infographics adopted by small teams to align planning and execution.</li>
+                <li>Delivered competitive analyses &amp; customer research that informed GTM pivots.</li>
+                <li><em>Result:</em> faster launches and higher-confidence decisions for early product teams.</li>
+              </ul>
+            </div>
+            <div class="when">Apr 2023 to Present</div>
+          </div>
+
+          <div class="role">
+            <div>
+              <p class="title">Technical Product Owner · Nortal (for T-Mobile)</p>
+              <div class="where"><span class="loc">Remote</span></div>
+              <ul>
+                <li>Owned prepaid API backlog (IMEI validation, coupons, Metro biller) for onboarding at Walmart, Costco, Best Buy.</li>
+                <li>Designed integrated retail flows that cut new customer activation from ~3 days to ~30 minutes (&gt;95% faster).</li>
+                <li>Mapped cross-ART dependencies and drove SAFe PI planning readiness to de-risk delivery across teams.</li>
+                <li>Launched “Add a Line” retail feature extending account services for prepaid users.</li>
+                <li><em>Impact:</em> streamlined onboarding at national retailers; reduced dependency bottlenecks.</li>
+              </ul>
+            </div>
+            <div class="when">Jul 2022 to Apr 2023</div>
+          </div>
+
+          <div class="role">
+            <div>
+              <p class="title">Product Owner / Business Analyst · WindTalker</p>
+              <div class="where"><span class="loc">Remote</span></div>
+              <ul>
+                <li>PO for Manager: real-time network health monitoring enabling self-healing adjustments.</li>
+                <li>BA for Planner: captured requirements for RF network mapping across complex terrain.</li>
+                <li>Defined secure, off-grid peer-to-peer communications requirements for Osmosis.</li>
+              </ul>
+            </div>
+            <div class="when">Apr 2021 to Jul 2022</div>
+          </div>
+
+          <div class="role">
+            <div>
+              <p class="title">Senior Business Analyst · EHS Insight (StarTex Software)</p>
+              <div class="where"><span class="loc">Remote</span></div>
+              <ul>
+                <li>Strengthened ISO 9001/14001/45001 compliance modules used for client certification.</li>
+                <li>Partnered with engineering to ship AWS-based security upgrades (encryption, monitoring).</li>
+                <li>Released mobile updates enabling offline inspections and real-time audits for field teams.</li>
+              </ul>
+            </div>
+            <div class="when">Jan 2021 to Apr 2021</div>
+          </div>
+
+          <div class="role">
+            <div>
+              <p class="title">Product Owner · ConnectWise Manage</p>
+              <div class="where"><span class="loc">Tampa, FL</span></div>
+              <ul>
+                <li>Implemented MFA across CRM/Service/System; hardened access for enterprise users.</li>
+                <li>Launched ConnectWise Now dashboards; reduced reporting cycles from days to minutes.</li>
+                <li>Led AngularJS → React migration; cut screen load times nearly in half.</li>
+                <li>Converted legacy APIs to REST; enabled more secure, scalable integrations.</li>
+                <li><em>Outcome:</em> modernized a legacy platform and improved security posture &amp; UX.</li>
+              </ul>
+            </div>
+            <div class="when">Mar 2017 to Dec 2020</div>
+          </div>
+
+        </section>
+      </main>
+    </div>
+  </div>
+</body>
+</html>
