@@ -25,11 +25,10 @@
   .topbar a:hover{text-decoration:underline}
   .dot::before{content:"•";margin:0 8px;color:var(--muted)}
 
-  header{display:flex;align-items:flex-start;justify-content:space-between;margin-bottom:8px}
-  .titleblock{}
+  header{margin-bottom:8px}
   h1{font-size:28px;line-height:1.1;margin:0 0 3px 0}
   .subtitle{font-weight:700;color:var(--accent);margin:2px 0 8px 0}
-  .summary{color:var(--muted-2);margin:0}
+  .summary{color:var(--muted-2);margin:0;white-space:nowrap}
 
   .grid{display:grid;grid-template-columns:330px 1fr;gap:38px;margin-top:10px}
   @media (max-width:950px){ .grid{grid-template-columns:1fr;gap:24px} }
@@ -68,11 +67,9 @@
     </div>
 
     <header>
-      <div class="titleblock">
-        <h1>Shaina Pauley</h1>
-        <div class="subtitle">AI Product Architect · Builder</div>
-        <p class="summary">8+ years shipping production software. From enterprise APIs at T-Mobile to AI-native systems built and maintained daily.</p>
-      </div>
+      <h1>Shaina Pauley</h1>
+      <div class="subtitle">AI Product Architect · Builder</div>
+      <p class="summary">8+ years shipping production software. From enterprise APIs at T-Mobile to AI-native systems built and maintained daily.</p>
     </header>
 
     <div class="grid">
